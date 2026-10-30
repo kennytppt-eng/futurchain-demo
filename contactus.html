@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic setup so text displays correctly -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the page responsive on different devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Website icon shown in the browser tab -->
+    <link rel="shortcut icon" href="media/Futurechain_logo2.png" type="image/x-icon">
+
+    <!-- Linking my main CSS file for styling -->
+    <link rel="stylesheet" href="style/styles.css">
+
+    <!-- JavaScript file -->
+    <!-- I used help from an AI agent to build and understand the contact form validation and search bar logic -->
+    <script src="scripts/script.js"></script>
+
+    <!-- Helps fonts load faster -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Importing fonts used across the website -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Description for search engines -->
+    <meta name="description" content="Contact FuturChain with questions about blockchain or website feedback. Connect with our team through our simple contact form.">
+
+    <!-- Page title -->
+    <title>Contact Us</title>
+</head>
+
+<body>
+
+    <!-- Header (same across all pages for consistency) -->
+    <header>
+        <div class="left-section">
+
+            <!-- Logo linking back to homepage -->
+            <a href="index.html" class="logo-link">
+                <img class="small" src="media/Logo_header1.png" alt="FuturChain logo" width="200" height="40">
+            </a>
+
+            <!-- Search bar -->
+            <!-- Connected to JavaScript (siteSearch function) -->
+            <!-- I used AI help to understand how this works -->
+            <form class="search-bar" onsubmit="siteSearch(event)">
+                <input type="search" name="search" placeholder="Search..." aria-label="Search the website">
+                <button type="submit">🔍</button>
+            </form>
+
+            <!-- Navigation menu -->
+            <nav class="top-menu" aria-label="Main navigation">
+                <ul>
+                    <li><a class="" href="index.html">Home</a></li>
+                    <li><a class="" href="learn.html">Learn</a></li>
+                    <li><a class="" href="application.html">Application</a></li>
+                    <li><a class="" href="future.html">Future of Blockchain</a></li>
+                    <li><a class="" href="benefits.html">Benefits & Challenges</a></li>
+                    <li><a class="" href="login.html">Login</a></li>
+
+                    <!-- Active class shows current page -->
+                    <li><a class="active" href="contactus.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero section introducing the page -->
+    <section class="page-hero">
+
+        <!-- Main heading -->
+        <h1>Contact Us</h1>
+
+        <!-- Short explanation of what this page is for -->
+        <!-- I kept this simple and clear for usability -->
+        <p>Use this page to ask a question about blockchain or send feedback about the FuturChain website.</p>
+    </section>
+
+    <!-- Main content section -->
+    <main class="section">
+
+        <!-- Contact form -->
+        <!-- I used AI assistance to help structure and validate this form properly -->
+        <form class="form-box" onsubmit="validateContact(event)">
+
+            <!-- Form title -->
+            <h2>Send a Message</h2>
+
+            <!-- Name input -->
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" placeholder="Your name">
+
+            <!-- Email input -->
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" placeholder="example@email.com">
+
+            <!-- Dropdown menu for topic selection -->
+            <!-- This makes the form more structured and easier to use -->
+            <label for="topic">Topic</label>
+            <select id="topic" name="topic">
+                <option>General question</option>
+                <option>Blockchain applications</option>
+                <option>Website feedback</option>
+            </select>
+
+            <!-- Message input -->
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Write your message here"></textarea>
+
+            <!-- Submit button -->
+            <button class="btn" type="submit">Send Message</button>
+
+            <!-- Message area for validation feedback -->
+            <!-- This is updated using JavaScript -->
+            <p id="contactMessage" class="message"></p>
+        </form>
+    </main>
+
+    <!-- Footer section -->
+    <footer class="footer">
+
+        <!-- Links to policy pages -->
+        <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms</a>
+
+        <!-- Copyright -->
+        <br>&copy; 2026 FuturChain
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head>
+    <!-- Basic setup so text displays correctly -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the page responsive on phones and other devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Description for search engines -->
+    <meta name="description" content="Explore the future of blockchain: Web3, smart cities, digital currencies, and user data ownership. Learn what is next for blockchain technology.">
+
+    <!-- Description used when sharing the page -->
+    <meta property="og:description" content="Discover blockchain potential including Web3, smart cities, AI integration, and decentralized applications transforming digital systems.">
+
+    <!-- Title shown in the browser tab -->
+    <title>Future of Blockchain</title>
+
+    <!-- Website icon -->
+    <link rel="shortcut icon" href="media/Futurechain_logo2.png" type="image/x-icon">
+
+    <!-- Linking my main CSS file -->
+    <link rel="stylesheet" href="style/styles.css">
+
+    <!-- JavaScript file -->
+    <!-- I used help from an AI agent to understand the search bar logic used across the website -->
+    <script src="scripts/script.js"></script>
+
+    <!-- Helps fonts load faster -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Importing fonts used in the design -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header section (same layout across all pages for consistency) -->
+    <header>
+        <div class="left-section">
+
+            <!-- Logo linking back to homepage -->
+            <a href="index.html" class="logo-link">
+                <img class="small" src="media/Logo_header1.png" alt="FuturChain logo" width="200" height="40">
+            </a>
+
+            <!-- Search bar -->
+            <!-- Connected to JavaScript (siteSearch function) -->
+            <!-- I used AI help to understand how to implement this feature -->
+            <form class="search-bar" onsubmit="siteSearch(event)">
+                <input type="search" name="search" placeholder="Search..." aria-label="Search the website">
+                <button type="submit">🔍</button>
+            </form>
+
+            <!-- Navigation menu -->
+            <nav class="top-menu" aria-label="Main navigation">
+                <ul>
+                    <li><a class="" href="index.html">Home</a></li>
+                    <li><a class="" href="learn.html">Learn</a></li>
+                    <li><a class="" href="application.html">Application</a></li>
+
+                    <!-- Active class shows current page -->
+                    <li><a class="active" href="future.html">Future of Blockchain</a></li>
+
+                    <li><a class="" href="benefits.html">Benefits & Challenges</a></li>
+                    <li><a class="" href="login.html">Login</a></li>
+                    <li><a class="" href="contactus.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero section introducing the page -->
+    <section class="page-hero">
+
+        <!-- Main heading -->
+        <h1>The Future of Blockchain</h1>
+
+        <!-- Short explanation of what the page is about -->
+        <!-- I tried to keep it simple and forward-looking -->
+        <p>The future of blockchain could include Web3, smart cities, digital currencies and better data ownership for users.</p>
+
+        <!-- Image to make the page more engaging -->
+        <img class="hero-image" src="media/future.png" alt="Future trend line illustration" width="480" height="300">
+    </section>
+
+    <main>
+
+        <!-- Main content section -->
+        <section class="section">
+
+            <!-- Two-column layout -->
+            <!-- I used this to separate ideas clearly and improve readability -->
+            <div class="two-column">
+
+                <!-- Left column showing future possibilities -->
+                <div class="info-box">
+                    <h2>Future possibilities</h2>
+
+                    <!-- Nested list used to organise ideas clearly -->
+                    <ul class="nested-list">
+
+                        <!-- Web3 -->
+                        <li>Web3
+                            <ul>
+                                <li>Users could have more control over their online data.</li>
+                            </ul>
+                        </li>
+
+                        <!-- Smart cities -->
+                        <li>Smart cities
+                            <ul>
+                                <li>Connected services could share trusted information.</li>
+                            </ul>
+                        </li>
+
+                        <!-- AI and IoT -->
+                        <li>AI and IoT
+                            <ul>
+                                <li>Blockchain could help secure automated devices and decisions.</li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <!-- Right column with personal opinion -->
+                <div class="info-box">
+
+                    <h2>My view</h2>
+
+                    <!-- I included my own opinion here to make the website feel more personal -->
+                    <p>I think blockchain will become more useful when people understand it better and when it is used to solve real problems instead of just being treated as a trend.</p>
+
+                    <!-- Explains my design thinking for this page -->
+                    <p>For this website, I wanted the future page to feel simple and positive, while still showing that there are challenges before the technology becomes common everywhere.</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer class="footer">
+
+        <!-- Links to policy pages -->
+        <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms</a>
+
+        <!-- Copyright -->
+        <br>&copy; 2026 FuturChain
+    </footer>
+
+</body>
+</html>

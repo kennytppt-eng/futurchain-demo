@@ -1,0 +1,167 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+<head> 
+    <!-- Basic setup so text displays properly -->
+    <meta charset="UTF-8"> 
+
+    <!-- Makes the layout responsive on different screen sizes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <!-- Description for search engines -->
+    <meta name="description" content="Learn blockchain basics for beginners. Understand decentralization, transparency, security, and how blockchain technology works in simple terms.">
+
+    <!-- Description used when sharing the page -->
+    <meta property="og:description" content="Simple blockchain explanation covering what blockchain is, how it works, and why decentralization, transparency and security matter.">
+
+    <!-- Page title shown in browser tab -->
+    <title>Learn</title>
+
+    <!-- Website icon -->
+    <link rel="shortcut icon" href="media/Futurechain_logo2.png" type="image/x-icon"> 
+
+    <!-- Linking my CSS file for styling -->
+    <link rel="stylesheet" href="style/styles.css">
+
+    <!-- JavaScript file -->
+    <!-- I used help from an AI agent to understand the search bar logic used across the website -->
+    <script src="scripts/script.js"></script> 
+
+    <!-- Helps fonts load faster -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Importing fonts used in the design -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+</head>  
+
+<body>
+
+    <!-- Header section (same across all pages for consistency) -->
+    <header>
+        <div class="left-section">
+
+            <!-- Logo linking back to homepage -->
+            <a href="index.html" class="logo-link">
+                <img class="small" src="media/Logo_header1.png" alt="FuturChain logo" width="200" height="40">
+            </a>
+
+            <!-- Search bar -->
+            <!-- Connected to JavaScript (siteSearch function) -->
+            <!-- I used AI help to understand how to implement this -->
+            <form class="search-bar" onsubmit="siteSearch(event)">
+                <input type="search" name="search" placeholder="Search..." aria-label="Search the website">
+                <button type="submit">🔍</button>
+            </form>
+
+            <!-- Navigation menu -->
+            <nav class="top-menu" aria-label="Main navigation">
+                <ul>
+                    <li><a class="" href="index.html">Home</a></li>
+
+                    <!-- Active class shows current page -->
+                    <li><a class="active" href="learn.html">Learn</a></li>
+
+                    <li><a class="" href="application.html">Application</a></li>
+                    <li><a class="" href="future.html">Future of Blockchain</a></li>
+                    <li><a class="" href="benefits.html">Benefits & Challenges</a></li>
+                    <li><a class="" href="login.html">Login</a></li>
+                    <li><a class="" href="contactus.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero section introducing the page -->
+    <section class="page-hero">
+
+        <!-- Main heading -->
+        <h1>Learn Blockchain Basics</h1>
+
+        <!-- Short explanation -->
+        <!-- I tried to keep this simple since the target audience is beginners -->
+        <p>This page explains blockchain in a simple way for students and beginners. It focuses on the main ideas without making the topic too complicated.</p>
+
+        <!-- Image to make the page more visual -->
+        <img class="hero-image" src="media/learn.png" alt="Simple learning card illustration" width="480" height="300">
+    </section>
+
+    <main>
+
+        <!-- Main learning content -->
+        <section class="section">
+
+            <!-- Two-column layout -->
+            <!-- I used this to separate explanation and key features -->
+            <div class="two-column">
+
+                <!-- Left side: explanation -->
+                <div>
+                    <h2>What does blockchain mean?</h2>
+
+                    <!-- Simple explanation in my own words -->
+                    <p>Blockchain is a digital record system. Information is stored in blocks, and each block is connected to the one before it. This makes the records harder to change without everyone noticing.</p>
+
+                    <!-- Explains decentralisation -->
+                    <p>Instead of one company or person controlling the whole database, copies can be shared across many computers. This is why blockchain is often described as decentralised.</p>
+                </div>
+
+                <!-- Right side: key features -->
+                <div class="info-box">
+
+                    <h3>Main blockchain features</h3>
+
+                    <!-- Nested list used to clearly organise features -->
+                    <ul class="nested-list">
+
+                        <!-- Decentralisation -->
+                        <li>Decentralisation
+                            <ul>
+                                <li>No single point controls all records.</li>
+                            </ul>
+                        </li>
+
+                        <!-- Transparency -->
+                        <li>Transparency
+                            <ul>
+                                <li>Transactions can be checked by users on the network.</li>
+                            </ul>
+                        </li>
+
+                        <!-- Security -->
+                        <li>Security
+                            <ul>
+                                <li>Cryptography helps protect the data.</li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section explaining why blockchain is important -->
+        <section class="section blue-section">
+            <div class="container">
+
+                <h2>Why it matters</h2>
+
+                <!-- I included this to explain real-world importance -->
+                <p>Blockchain matters because it can help people trust digital information, especially when different organisations need to share records safely.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer section -->
+    <footer class="footer">
+
+        <!-- Links to policy pages -->
+        <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms</a> <br>
+
+        <!-- Copyright -->
+        &copy; 2026 Futurchain
+    </footer>
+  
+</body>
+</html>

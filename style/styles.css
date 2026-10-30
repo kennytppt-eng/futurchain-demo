@@ -1,0 +1,441 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%; 
+  height: auto; 
+  display: block; }
+
+body {
+  font-size: 16px;
+  font-family: 'Inter';
+  font-weight: 400;
+  color: #000;
+  background-color: #ffffff;
+}
+
+h1, h2, h3 { 
+  font-family: 'Poppins';
+  color: #0b0f8c;
+}
+h1 { 
+  font-size: 40px; 
+  font-weight: 700; 
+}
+h2 { 
+  font-size: 28px; 
+  font-weight: 600; 
+}
+
+h3 { 
+  font-size: 22px; 
+  font-weight: 500;
+}
+
+header { 
+  background-color: #0b0f8c; 
+  position: sticky; 
+}
+.left-section { 
+  display: flex; 
+  align-items: center; 
+  padding: 0 10px; 
+  flex-wrap: wrap; 
+  justify-content: space-between;
+}
+
+.small { width: 200px; 
+  height: auto; 
+}
+
+.search-bar { display: flex; 
+  align-items: center;
+}
+
+.search-bar input { 
+  padding: 5px; 
+  border: none; 
+  border-radius:4px;
+}
+
+.search-bar button { 
+  background: none;
+  border: none; 
+  color: #fff; 
+  cursor: pointer; 
+  padding: 10px;
+}
+
+nav.top-menu ul { 
+  list-style: none; 
+  display: flex;
+  justify-content: space-around; 
+  font-family: 'Poppins'; 
+  font-weight: 400;
+}
+nav.top-menu ul a { 
+  display: block; 
+  padding: 18px 14px; 
+  color: #fff; 
+  text-decoration: none; 
+  transition: background-color 0.5s ease;
+}
+nav.top-menu ul a:hover { 
+  background-color: #0ea5a4; 
+  text-shadow: #333 0px 0px 4px; 
+}
+
+nav.top-menu ul a.active{
+  background-color: #0f766e; 
+  text-shadow: #333 0px 0px 4px; 
+}
+
+.statement {
+  text-align: center;
+  padding: 80px 20px 20px;
+  background-color: #fff;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 12px 28px;
+  border-radius: 500px;
+  text-decoration: none;
+  font-weight: 700;
+  display: inline-block;
+  background-color: #0f766e; /* darker teal for better contrast */
+  color: #fff;
+  margin-top: 50px;
+}
+
+.btn:hover { 
+  background-color: #0ea5a4; 
+  color: #fff; 
+  transition: 0.25s ease; 
+  transform: translateY(-3px);
+}
+
+.blue-section { 
+  background-color: #0b0f8c; 
+  color: #fff;
+}
+
+.container {
+  text-align: center;
+  padding: 45px 20px;
+  border-bottom: 1px solid #ccc;
+  display: grid;
+}
+
+.container h2 {
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.container p {
+  color: #fff;
+}
+
+.card-grid {
+  display: grid;
+  gap: 20px;
+  padding: 50px 20px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  background-color: #f3f4f6;
+}
+
+.card { 
+  background-color: #fff; 
+  border: 1px solid #d1d5db; 
+  padding: 20px;
+  text-align: center; 
+  border-radius: 14px; 
+  animation: fadeUp 0.7s ease both;
+}
+
+.footer {
+  background-color: #000080;
+  text-align: center;
+  padding : 20px;
+  border-top: 1px solid #ccc;
+  color: #fff;
+ 
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+main { 
+  background-color: #fff;
+}
+
+.light-section { 
+  background-color: #f3f4f6;
+}
+
+.card img { height: 130px; 
+  object-fit: contain; 
+  margin: 0 auto 15px;
+}
+
+.card ul { text-align: left;
+  margin-left: 20px;
+}
+
+
+.page-hero { 
+  padding: 60px 20px; 
+  text-align: center; 
+  background-color: #f3fafa;
+}
+
+.page-hero h1, .page-hero h2, .page-hero h3 {
+  color: #000;
+}
+
+.page-hero p {
+  color: #333;
+}
+
+.hero-image { 
+  max-width: 480px; 
+  margin: 25px auto 0; 
+  border-radius: 18px; 
+}
+
+.two-column { max-width: 1100px; 
+  margin: auto; 
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  gap: 25px; 
+  align-items: center;
+}
+.info-box { 
+  background-color: #fff; 
+  border-left: 6px solid #27d2c4; 
+  padding: 25px; 
+  border-radius: 12px;
+}
+
+.nested-list { 
+  max-width: 850px; 
+  margin: 20px auto; 
+  padding-left: 25px;
+}
+.nested-list ul { 
+  margin: 8px 0 8px 25px;
+}
+
+.table-wrap { 
+  overflow-x: auto; 
+  max-width: 1100px; 
+  margin: 25px auto; 
+}
+
+table { 
+  width: 100%; 
+  border-collapse: collapse; 
+  background: #fff;
+}
+
+th, td { 
+  border: 1px solid #d1d5db; 
+  padding: 12px; 
+  text-align: left; 
+}
+
+th { 
+  background-color: #0b0f8c; 
+  color: #fff;
+}
+
+td { 
+  color: #000;
+}
+
+tr:nth-child(even) { 
+  background-color: #f3fafa;
+}
+
+.form-box { 
+  max-width: 600px; 
+  margin: 25px auto; 
+  padding: 28px; 
+  border-radius: 16px; 
+  background: #f3fafa; 
+  border: 1px solid #d1d5db;
+}
+
+label { 
+  display: block; 
+  font-weight: 700; 
+  margin-top: 15px; 
+  color: #000;
+}
+
+input, textarea, select { 
+  width: 100%; 
+  padding: 12px; 
+  margin-top: 6px; 
+  border: 1px solid #9ca3af; 
+  border-radius: 8px; 
+  font-family: 'Inter'; }
+textarea { 
+  min-height: 140px; 
+  resize: vertical;
+}
+.message { 
+  margin-top: 15px; 
+  font-weight: 700; 
+  color: #0f766e;
+}
+
+.inline-note { 
+  font-size: 14px; 
+  color: #374151;
+}
+
+.policy-page { 
+  max-width: 850px; 
+  margin: auto; 
+  padding: 70px 20px;
+}
+
+@keyframes fadeUp { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes pulseLine { 0%,100% { opacity: 1; } 50% { opacity: 0.55; } }
+.animated-line { animation: pulseLine 1.5s infinite; }
+
+
+/* Tablets and small laptops (900px and below) */
+@media (max-width: 900px) {
+
+  /* Header: stack logo, search and menu, and centre them */
+  .left-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .search-bar {
+    margin: 8px 0;
+  }
+
+  /* Menu items wrap onto a second row instead of overflowing */
+  nav.top-menu ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav.top-menu ul a {
+    padding: 12px 12px;
+  }
+
+  /* Two-column layouts become one column */
+  .two-column {
+    grid-template-columns: 1fr;
+  }
+
+  h1 { font-size: 34px; }
+  h2 { font-size: 26px; }
+}
+
+/* Large phones and small tablets (768px and below) */
+@media (max-width: 768px) {
+
+  /* Cards stack in a single column so text stays readable */
+  .card-grid {
+    grid-template-columns: 1fr;
+    padding: 35px 20px;
+  }
+
+  .statement {
+    padding: 50px 20px 10px;
+  }
+
+  .page-hero {
+    padding: 40px 20px;
+  }
+
+  .hero-image {
+    max-width: 100%;
+  }
+
+  .container {
+    padding: 35px 20px;
+  }
+
+  /* The table wrapper sits inside a grid and has auto margins, so it
+     sizes itself to the table's width. Setting width: 100% keeps it
+     inside the screen, and the table scrolls sideways within it. */
+  .table-wrap {
+    width: 100%;
+  }
+
+  .policy-page {
+    padding: 45px 20px;
+  }
+}
+
+/* Phones (480px and below) */
+@media (max-width: 480px) {
+
+  h1 { font-size: 28px; }
+  h2 { font-size: 22px; }
+  h3 { font-size: 19px; }
+
+  /* Buttons stack and fill the width so they are easy to tap */
+  .buttons {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .btn {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  /* Search bar uses the full width */
+  .search-bar {
+    width: 100%;
+  }
+
+  /* Smaller menu items so more fit on each row */
+  nav.top-menu ul a {
+    padding: 10px 8px;
+    font-size: 14px;
+  }
+
+  /* Forms: less padding, and the inputs stay inside the screen */
+  .form-box {
+    padding: 18px;
+    margin: 20px 12px;
+  }
+
+  /* Tables scroll sideways inside their wrapper with smaller text */
+  th, td {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .footer a {
+    display: inline-block;
+    margin: 4px 8px;
+  }
+}

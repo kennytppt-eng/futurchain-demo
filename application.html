@@ -1,0 +1,184 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head>
+    <!-- Basic setup so text displays correctly -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the layout responsive on different screen sizes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Description for search engines -->
+    <meta name="description" content="Discover real-world blockchain applications in finance, supply chains, healthcare, and digital identity. See how blockchain is transforming industries.">
+
+    <!-- Description used when the page is shared -->
+    <meta property="og:description" content="Explore blockchain applications across finance, supply chains, healthcare and identity systems. Learn how organizations use blockchain technology.">
+
+    <!-- Title shown in browser tab -->
+    <title>Applications of Blockchain</title>
+
+    <!-- Website icon -->
+    <link rel="shortcut icon" href="media/Futurechain_logo2.png" type="image/x-icon">
+
+    <!-- Main CSS file for styling -->
+    <link rel="stylesheet" href="style/styles.css">
+
+    <!-- JavaScript file -->
+    <!-- I used some help from an AI agent for the search bar logic used across the site -->
+    <script src="scripts/script.js"></script>
+
+    <!-- Helps fonts load faster -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Importing fonts used in the design -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header (same across all pages for consistency and navigation) -->
+    <header>
+        <div class="left-section">
+
+            <!-- Logo that links back to homepage -->
+            <a href="index.html" class="logo-link">
+                <img class="small" src="media/Logo_header1.png" alt="FuturChain logo" width="200" height="40">
+            </a>
+
+            <!-- Search bar -->
+            <!-- This is connected to my JavaScript file (siteSearch function) -->
+            <!-- I used AI help to understand and implement this feature -->
+            <form class="search-bar" onsubmit="siteSearch(event)">
+                <input type="search" name="search" placeholder="Search..." aria-label="Search the website">
+                <button type="submit">🔍</button>
+            </form>
+
+            <!-- Navigation menu -->
+            <nav class="top-menu" aria-label="Main navigation">
+                <ul>
+                    <li><a class="" href="index.html">Home</a></li>
+                    <li><a class="" href="learn.html">Learn</a></li>
+
+                    <!-- Active class highlights current page -->
+                    <li><a class="active" href="application.html">Application</a></li>
+
+                    <li><a class="" href="future.html">Future of Blockchain</a></li>
+                    <li><a class="" href="benefits.html">Benefits & Challenges</a></li>
+                    <li><a class="" href="login.html">Login</a></li>
+                    <li><a class="" href="contactus.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero section introducing the page -->
+    <section class="page-hero">
+
+        <!-- Main title -->
+        <h1>Blockchain Applications</h1>
+
+        <!-- Short explanation of the page -->
+        <!-- I kept this simple so it's easy for beginners to understand -->
+        <p>Blockchain is not only used for cryptocurrency. It can support different industries by improving trust, transparency and record keeping.</p>
+
+        <!-- Image to make the page more visual -->
+        <img class="hero-image" src="media/application.png" alt="Blockchain application blocks illustration" width="480" height="300">
+    </section>
+
+    <main>
+
+        <!-- Section with a table comparing industries -->
+        <!-- I added this to clearly show different real-world uses -->
+        <section class="blue-section">
+            <div class="container">
+
+                <h2>Application comparison table</h2>
+
+                <!-- Wrapper helps the table scroll on smaller screens -->
+                <div class="table-wrap">
+
+                    <!-- Table showing different industries and how blockchain is used -->
+                    <table>
+                        <tr>
+                            <th>Industry</th>
+                            <th>Example Use</th>
+                            <th>Main Benefit</th>
+                            <th>Challenge</th>
+                        </tr>
+
+                        <!-- Finance row -->
+                        <tr>
+                            <td>Finance</td>
+                            <td>Crypto payments</td>
+                            <td>Fast digital transactions</td>
+                            <td>Regulation</td>
+                        </tr>
+
+                        <!-- Supply chain row -->
+                        <tr>
+                            <td>Supply Chain</td>
+                            <td>Product tracking</td>
+                            <td>Better transparency</td>
+                            <td>Data accuracy</td>
+                        </tr>
+
+                        <!-- Healthcare row -->
+                        <tr>
+                            <td>Healthcare</td>
+                            <td>Patient records</td>
+                            <td>Improved privacy</td>
+                            <td>System integration</td>
+                        </tr>
+
+                        <!-- Digital identity row -->
+                        <tr>
+                            <td>Digital Identity</td>
+                            <td>Online ID checks</td>
+                            <td>User control</td>
+                            <td>Adoption</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Card section to summarise key applications -->
+        <section class="section">
+            <div class="card-grid">
+
+                <!-- Finance card -->
+                <div class="card">
+                    <h3>Finance</h3>
+                    <p>Blockchain can support cryptocurrency payments and decentralised finance services without relying fully on banks.</p>
+                </div>
+
+                <!-- Supply chain card -->
+                <div class="card">
+                    <h3>Supply Chains</h3>
+                    <p>Products can be tracked from origin to delivery, making it easier to spot fraud or missing information.</p>
+                </div>
+
+                <!-- Healthcare card -->
+                <div class="card">
+                    <h3>Healthcare</h3>
+                    <p>Medical records can be stored and shared more safely between trusted organisations.</p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer section -->
+    <footer class="footer">
+
+        <!-- Links to policy pages -->
+        <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms</a> <br>
+
+        <!-- Copyright -->
+        &copy; 2026 Futurchain
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head>
+    <!-- Basic setup so text displays correctly -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the page responsive on different devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Description for search engines -->
+    <meta name="description" content="Futurechain — transforming trust and powering the future with blockchain. Learn blockchain basics, real-world applications, and benefits.">
+
+    <!-- Description used when sharing the page -->
+    <meta property="og:description" content="Futurechain introduces blockchain: what it is, how it's used in finance, healthcare and supply chains, and its benefits and challenges.">
+
+    <!-- Page title -->
+    <title>Login</title>
+
+    <!-- Website icon -->
+    <link rel="shortcut icon" href="media/Futurechain_logo2.png" type="image/x-icon">
+
+    <!-- Linking my CSS file -->
+    <link rel="stylesheet" href="style/styles.css">
+
+    <!-- JavaScript file -->
+    <!-- I used help from an AI agent to build and understand the login form validation and search bar logic -->
+    <script src="scripts/script.js"></script>
+
+    <!-- Helps fonts load faster -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Importing fonts used across the website -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header section (same across all pages for consistency) -->
+    <header>
+        <div class="left-section">
+
+            <!-- Logo linking back to homepage -->
+            <a href="index.html" class="logo-link">
+                <img class="small" src="media/Logo_header1.png" alt="FuturChain logo" width="200" height="40">
+            </a>
+
+            <!-- Search bar -->
+            <!-- Connected to JavaScript (siteSearch function) -->
+            <!-- I used AI help to understand how this works -->
+            <form class="search-bar" onsubmit="siteSearch(event)">
+                <input type="search" name="search" placeholder="Search..." aria-label="Search the website">
+                <button type="submit">🔍</button>
+            </form>
+
+            <!-- Navigation menu -->
+            <nav class="top-menu" aria-label="Main navigation">
+                <ul>
+                    <li><a class="" href="index.html">Home</a></li>
+                    <li><a class="" href="learn.html">Learn</a></li>
+                    <li><a class="" href="application.html">Application</a></li>
+                    <li><a class="" href="future.html">Future of Blockchain</a></li>
+                    <li><a class="" href="benefits.html">Benefits & Challenges</a></li>
+
+                    <!-- Active class shows current page -->
+                    <li><a class="active" href="login.html">Login</a></li>
+
+                    <li><a class="" href="contactus.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero section -->
+    <section class="page-hero">
+
+        <!-- Simple title for the page -->
+        <h1>Login</h1>
+    </section>
+
+    <!-- Main content -->
+    <main class="section">
+
+        <!-- Login form -->
+        <!-- I used AI assistance to help structure this form and handle validation -->
+        <form class="form-box" onsubmit="validateLogin(event)">
+
+            <!-- Form heading -->
+            <h2>Member Login</h2>
+
+            <!-- Email input -->
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" placeholder="example@email.com">
+
+            <!-- Password input -->
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter password">
+
+            <!-- Submit button -->
+            <button class="btn" type="submit">Login</button>
+
+            <!-- Message area for validation feedback -->
+            <!-- This gets updated using JavaScript -->
+            <p id="loginMessage" class="message"></p>
+
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <!-- Links to policy pages -->
+        <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms</a>
+
+        <!-- Copyright -->
+        <br>&copy; 2026 FuturChain
+    </footer>
+
+</body>
+</html>
